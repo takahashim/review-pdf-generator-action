@@ -7,7 +7,7 @@ OUTPUT_PATH = "build/output.pdf"
 config_dir = "."
 
 if ARGV[0]
-  config_dir = ARGV[0]
+  config_dir = File.dirname(ARGV[0])
 end
 
 config_path = File.join(config_dir, "config.yml")
@@ -20,4 +20,3 @@ if File.exist?(pdf_path)
   FileUtils.mkdir_p(File.dirname(OUTPUT_PATH))
   FileUtils.cp(pdf_path, OUTPUT_PATH)
 end
-
