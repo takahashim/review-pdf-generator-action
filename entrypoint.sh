@@ -11,7 +11,7 @@ if [ -e $ROOT_CONFIG_FILE ]; then
 else
     if [ -e $REVIEW_TEMPLATE_CONFIG_FILE ]; then
         echo "use npm"
-        npm install && npm run pdf && \
+        bundle install && npm install && npm run pdf && \
         ruby /copy_build_file.rb && \
         echo "done."
     fi
