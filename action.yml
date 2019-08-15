@@ -1,6 +1,6 @@
 # action.yml
-name: 'Re:VIEW generate PDF action'
-description: 'build PDF and upload as artifact'
+name: 'Re:VIEW PDF generator'
+description: 'build PDF of Re:VIEW and upload as artifact'
 author: '@takahashim'
 runs:
   using: 'docker'
