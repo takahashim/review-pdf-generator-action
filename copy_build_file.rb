@@ -10,6 +10,7 @@ end
 
 conf = YAML.safe_load(File.read(config_path), [Date])
 pdf_file = conf["bookname"]+".pdf"
+puts "find PDF #{pdf_file}."
 if File.exist?(pdf_file)
   FileUtils.mkdir_p("build")
   FileUtils.cp(pdf_file, "build/output.pdf")
