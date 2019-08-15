@@ -1,0 +1,10 @@
+# action.yml
+name: 'Re:VIEW generate PDF action'
+description: 'build PDF and upload as artifact'
+author: '@takahashim'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  color: 'green'
+  icon: 'book'
