@@ -1,12 +1,12 @@
 FROM vvakame/review:3.2
 
-LABEL "com.github.actions.name"="Re:VIEW PDF Builder"
-LABEL "com.github.actions.description"="generate PDF file from Re:VIEW repository"
+LABEL "com.github.actions.name"="Re:VIEW PDF Generator"
+LABEL "com.github.actions.description"="builds PDF from Re:VIEW repository and uploads as Artifacts"
 LABEL "com.github.actions.icon"="book"
-LABEL "com.github.actions.color"="green"
+LABEL "com.github.actions.color"="orange"
 
-LABEL "repository"="http://github.com/takahashim/review-generate-pdf-action"
-LABEL "homepage"="http://github.com/takahashim/review-generate-pdf-action"
+LABEL "repository"="https://github.com/takahashim/review-pdf-generator-action"
+LABEL "homepage"="https://github.com/takahashim/review-pdf-generator-action"
 LABEL "maintainer"="takahashim <takahashimm@gmail.com>"
 
 ADD entrypoint.sh /entrypoint.sh

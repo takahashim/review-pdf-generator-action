@@ -1,8 +1,8 @@
 # Re:VIEW PDF Generator Action
 
-This is a GitHub Action for Re:VIEW repository: builds PDF and uploads as Artifacts.
+This is a [GitHub Action](https://github.com/features/actions) for [Re:VIEW](https://github.com/kmuto/review) repository: builds PDF and uploads as Artifacts.
 
-**Name:** `takahashim/review-pdf-generator`
+**Name:** `takahashim/review-pdf-generator-action`
 
 # Usage
 
@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: build PDF
-      uses: takahashim/review-generate-pdf-action@master
+      uses: takahashim/review-pdf-generator-action@master
     - name: upload as Artifacts
-      uses: takahashim/upload-artifact-review@master
+      uses: takahashim/review-upload-artifact@master
 ```
