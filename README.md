@@ -21,6 +21,15 @@ jobs:
       uses: takahashim/review-pdf-generator-action/upload-artifact@master
 ```
 
+### about upload-artifact
+
+`upload-artifact` is a copy of [official upload-artifact](https://github.com/actions/upload-artifact) action.
+
+The changes are:
+
+* inputs `name` and `path` is not required
+* default `path` is `build/output.pdf`
+
 ----
 
 (in Japanese)
@@ -47,3 +56,14 @@ jobs:
     - name: upload as Artifacts
       uses: takahashim/review-pdf-generator-action/upload-artifact@master
 ```
+
+
+### upload-artifactについて
+
+`upload-artifact` は [official upload-artifact](https://github.com/actions/upload-artifact) actionをコピーしたものです。
+
+違いは以下になります:
+
+* inputs の `name` と `path` が省略可になっています
+* デフォルトの `path` は `build/output.pdf` になっています(Re:VIEW PDF Generator Actionの出力先に揃えています)
+
